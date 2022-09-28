@@ -37,4 +37,4 @@ def test_serial_version(tmp_path):
     pyi_main.run(args)
 
     # Run the built application and confirm it does not error
-    subprocess.run([str(distpath / app_name / app_name)], check=True)
+    subprocess.check_call([str(distpath / app_name / app_name)])
