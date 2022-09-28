@@ -14,10 +14,10 @@ def test_serial_version(tmp_path):
     app.write_text(
         "\n".join(
             [
-                "import pkg_resources",
-                "from granola.utils import check_min_package_version",
-                "pyserial_version = pkg_resources.get_distribution('pyserial').version",
-                "check_min_package_version('pyserial', pyserial_version)",
+                u"import pkg_resources",
+                u"from granola.utils import check_min_package_version",
+                u"pyserial_version = pkg_resources.get_distribution('pyserial').version",
+                u"check_min_package_version('pyserial', pyserial_version)",
             ]
         )
     )
